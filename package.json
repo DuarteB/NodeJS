@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuarteB/NodeJS.git"
+  },
+  "author": "Eduardo Duarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuarteB/NodeJS/issues"
+  },
+  "homepage": "https://github.com/DuarteB/NodeJS#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
