@@ -1,21 +1,11 @@
-const express = require('express');
-const msg = require('./mod_teste');
+const app = require('./config/server')
 
-const app = express();
+const rotaNoticias = require('./app/routes/noticias')(app)
 
-app.set('view engine', 'ejs');
+const rotaHome = require('./app/routes/home')(app)
 
-app.get('/', function(req, res){
-    res.send('home/index')
-})
-app.get('/formulario_inclusao_noticia', function(req, res){
-    res.render('admin/form_add_noticia')
-})
-
-app.get('/noticias', function(req, res){
-    res.render('noticias/noticias')
-})
+const rotaForm = require('./app/routes/formulario_inclusao_noticia')(app)
 
 app.listen(3000, function(){
-    console.log(msg())
+    console.log('Inicio do server')
 })
