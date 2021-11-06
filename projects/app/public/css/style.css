@@ -1,5 +1,5 @@
 body{
-	background:#F8F8F8;
+	background:#ffffff;
 }
 
 a:hover{
@@ -15,7 +15,11 @@ a:hover{
 }
 
 .navbar{
-	background:#FFF;
+	background:rgb(250, 250, 250);
+	text-align: center;
+}
+.navbar a{
+	margin-top: 20%;
 }
 
 .noticia_autor{
