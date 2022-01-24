@@ -35,7 +35,7 @@
 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">HOME</a></li>
+						<li><a href="/app/views/home/index.ejs">HOME</a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,8 +50,8 @@
 						<div class="alert alert-danger">
 							<strong>Atenção!</strong>
 							<ul>
-								<%  for(var i = 0; i < validacao.length; i++) {%>
-									<li><% validacao[i].msg %></li>
+								<% for(var i = 0; i < validacao.length; i++) { %>
+									<li><%= validacao[i].msg %></li>
 								<% } %>
 							</ul>
 						</div>
